@@ -42,6 +42,18 @@ background-color: #b0e0e6;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     color: #74b6bf;
 }
+.badge-de{
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    margin: 2px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: #74bf80 solid 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: #74bf83;
+}
 .search-tags{
     margin: 0 auto;
     padding: 0 auto;
@@ -72,8 +84,26 @@ background-color: #b0e0e6;
     color: rgb(79, 79, 79);
     border-radius: 20px;
     font-size: 14px;
+    margin-top: 20px;
    
     }
+    .search_names{
+        margin: 0 auto;
+        padding: 0 auto;
+        text-align: center;
+        border: none;
+        border-radius: 20px;
+        height: 50px;
+        margin-bottom: 30px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 900;
+        color: rgb(79, 79, 79);
+        border-radius: 20px;
+        font-size: 14px;
+       
+        }
 .search_area{
     margin: 0 auto;
     padding: 0 auto;
@@ -97,4 +127,8 @@ background-color: #b0e0e6;
         border: #4e9ba5 solid 7px;
         color: #128199;
 
+}
+.names{
+    height: 40px;
+    margin-bottom: 30px;
 }

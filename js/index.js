@@ -1,4 +1,5 @@
 var value=""
+
 document.getElementById('otukare').addEventListener('click', function(){
     value=value+"お疲れ様です。"
     console.log(value)
@@ -28,7 +29,7 @@ document.getElementById('otukare').addEventListener('click', function(){
   });
 
   document.getElementById('asapde').addEventListener('click', function(){
-    value=value+"ASAPで"
+    value=value+"ASAP"
     console.log(value)
     document.getElementById('textareas').value=value
   });
@@ -40,7 +41,7 @@ document.getElementById('otukare').addEventListener('click', function(){
   });
 
   document.getElementById('topdown').addEventListener('click', function(){
-    value=value+"トップダウンで"
+    value=value+"トップダウン"
     console.log(value)
     document.getElementById('textareas').value=value
   });
@@ -80,11 +81,83 @@ document.getElementById('otukare').addEventListener('click', function(){
     console.log(value)
     document.getElementById('textareas').value=value
   });
+  document.getElementById('puraio').addEventListener('click', function(){
+    value=value+"プライオリティ"
+    console.log(value)
+    document.getElementById('textareas').value=value
+  });
+  document.getElementById('toten').addEventListener('click', function(){
+    value=value+"、"
+    console.log(value)
+    document.getElementById('textareas').value=value
+  });
+
+document.getElementById('takame').addEventListener('click', function(){
+  value=value+"高め"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('de').addEventListener('click', function(){
+  value=value+"で"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('sdg').addEventListener('click', function(){
+  value=value+"SDGs"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+
+document.getElementById('tenpu').addEventListener('click', function(){
+  value=value+"添付ファイル"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('no').addEventListener('click', function(){
+  value=value+"の"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('tame').addEventListener('click', function(){
+  value=value+"ための"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+
+
+
+
+
+
+
+
 
   function logsend()
   {
     mail = "メールアドレス"
     title = "メール件名"
+    to=document.getElementById('to').value
+    from=document.getElementById('from').value
     text = document.getElementById('textareas').value
-    window.open().location.href = "mailto:" + mail + "?subject=" + title + "&body=" + text;
+    window.open().location.href = "mailto:" + mail + "?subject=" + title + "&body=" + to+"\n"+text+"\n"+from;
    }
+function   values(){
+     return value
+   }
+
+
+
+document.getElementById("twitter-share-button").onclick = function() {
+    // 出力結果を取得
+
+    to=document.getElementById('to').value+"\n"
+    from=document.getElementById('from').value+"\n"
+    text = document.getElementById('textareas').value+"\n"
+
+    // オプションパラメータを設定
+    let hashtags = "社会人メールメーカー";
+    let url = encodeURIComponent(location.href)  // location.hrefは今いるURL
+
+    // URLを生成して遷移
+    window.open("https://twitter.com/share?text=" + to+text+from + "&hashtags=" + hashtags + "&url=" + url);
+}
