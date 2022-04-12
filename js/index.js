@@ -17,7 +17,7 @@ document.getElementById('mousi').addEventListener('click', function () {
 });
 
 document.getElementById('kongotomo').addEventListener('click', function () {
-  value = value + "今後ともよろしくお願いいたします。"
+  value = value + "よろしくお願いいたします。"
   console.log(value)
   document.getElementById('textareas').value = value
 });
