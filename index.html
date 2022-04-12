@@ -1,17 +1,68 @@
 <!DOCTYPE html>
-<html lang="<i class="fas fa-java    "></i>">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社会人メールメーカー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
-    <script src="js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p class="main_titles">社会人メールメーカー</p>
+  
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 search_area">
+                <form>
+             
+                    <textarea class="search_input" id="textareas" rows="3"></textarea>
+                </form>
+                
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-10 search-tags">
+                <div class="badge badge-secondary" id="otukare">お疲れ様です。</div>
+               
+                <div class="badge badge-secondary" id="syouti">承知いたしました。</div>
+                <div class="badge badge-secondary" id="yorosiku">よろしくお願いいたします。</div>
+                <div class="badge badge-secondary" id="mousi">申し訳ありません。</div>
+                <div class="badge badge-secondary" id="kongotomo">今後ともよろしくお願いいたします。</div>
+                <div class="badge badge-secondary" id="keigu">敬具</div>
+                <div class="badge badge-secondary" id="asapde">ASAPで</div>
+                <div class="badge badge-secondary" id="konsensas">コンセンサス</div>
+                <div class="badge badge-secondary" id="topdown">トップダウンで</div>
+                <div class="badge badge-secondary" id="saihatu">再発防止策</div>
+                <div class="badge badge-secondary" id="heisya">弊社では</div>
+                <div class="badge badge-secondary" id="zehitomo">ぜひとも</div>
+                <div class="badge badge-secondary" id="siawase">世界の幸せ</div>
+                <div class="badge badge-secondary" id="kongo">今後とも</div>
+      
+                
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 search-tags">
+                <div onclick="logsend()" class="badge  btn-contacts">メール送信</div>
+            </div>
+
+        </div>
+    </div>
+  </div>
+<script src="js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
