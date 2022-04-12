@@ -123,6 +123,41 @@ document.getElementById('tame').addEventListener('click', function(){
   console.log(value)
   document.getElementById('textareas').value=value
 });
+document.getElementById('makoto').addEventListener('click', function(){
+  value=value+"誠に"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('gomennasai').addEventListener('click', function(){
+  value=value+"ごめんなさい。"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('niyotte').addEventListener('click', function(){
+  value=value+"によって"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('tikoku').addEventListener('click', function(){
+  value=value+"遅刻"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('techs').addEventListener('click', function(){
+  value=value+"技術的"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('possible').addEventListener('click', function(){
+  value=value+"可能"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
+document.getElementById('niha').addEventListener('click', function(){
+  value=value+"には"
+  console.log(value)
+  document.getElementById('textareas').value=value
+});
 
 
 
